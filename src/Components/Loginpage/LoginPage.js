@@ -15,7 +15,7 @@ const LoginPage = () => {
 
     // Send the Google token to your backend for verification
     try {
-      const res = await axios.post("https://editor-app-backend.onrender.com/api/verifyGoogleToken", { token: credential });
+      const res = await axios.post("https://editor-app-backend-1.onrender.com/api/verifyGoogleToken", { token: credential });
       const { token } = res.data;
       console.log("Backend JWT:", token);
 

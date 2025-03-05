@@ -33,7 +33,7 @@ const WordProcessor = () => {
         if (!authToken) throw new Error("No auth token found!");
 
         const response = await axios.post(
-            'https://editor-app-backend.onrender.com/api/save',
+            'https://editor-app-backend-1.onrender.com/api/save',
             { text },
             {
                 headers: {
